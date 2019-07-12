@@ -45,9 +45,10 @@ class Song
     artist_name = data[0]
     song_name = data[1].gsub(".mp3", "")
     song = self.new
-    song.save
+    # song.save
     song.name = song_name
     song.artist_name = artist_name
+    song
     # binding.pry
   end
 
@@ -58,7 +59,7 @@ class Song
     song = self.create
     song.name = song_name
     song.artist_name = artist_name
-
+    song
   end
 
   def self.destroy_all
